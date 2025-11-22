@@ -30,6 +30,7 @@ public class ControllerInteractor : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         // ฟิลเตอร์ tag
+        Debug.Log($"{transform.gameObject.name} Hit {other.gameObject.name}");
         if (!string.IsNullOrEmpty(targetTag) && !other.CompareTag(targetTag))
             return;
 
@@ -50,6 +51,7 @@ public class ControllerInteractor : MonoBehaviour
 
     void TryHaptics()
     {
+        Debug.Log("Hit");
         if (!playHaptics)
             return;
 
