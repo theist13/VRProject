@@ -1,7 +1,11 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Feedback;
+
+//using UnityEngine.XR.Interaction.Toolkit;
+
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class HapticZoneSimple : MonoBehaviour
 {
@@ -12,8 +16,12 @@ public class HapticZoneSimple : MonoBehaviour
     public Transform playerRoot;
 
     [Header("Controllers to vibrate (assign manually)")]
-    public UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor leftController;
-    public UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor rightController;
+    //public UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor leftController;
+    //public UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor rightController;
+    //public XRBaseInputInteractor leftController;
+    //public XRBaseInputInteractor rightController;
+    public SimpleHapticFeedback leftController;
+    public SimpleHapticFeedback rightController;
 
     [Header("Haptic (pulse while inside)")]
     [Range(0f, 1f)] public float amplitude = 0.45f;
@@ -59,9 +67,16 @@ public class HapticZoneSimple : MonoBehaviour
         return col.CompareTag(playerTag);
     }
 
-    void Send(UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor hand)
+    //void Send(UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor hand)
+    void Send(SimpleHapticFeedback h)
     {
-        if (hand == null || hand.xrController == null) return;
-        hand.xrController.SendHapticImpulse(Mathf.Clamp01(amplitude), Mathf.Max(0f, duration));
+        //if (hand == null || hand.xrController == null) return;
+        //hand.xrController.SendHapticImpulse(Mathf.Clamp01(amplitude), Mathf.Max(0f, duration));
+        if (h == null) {
+            Debug.Log("Haptic/Skip: NULL SimpleHapticFeedback");
+            return;
+        }
+        //h.SendHapticImpulse(amplitude, duration);
+        h.hapticImpulsePlayer.SendHapticImpulse(amplitude, duration);
     }
 }

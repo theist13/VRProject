@@ -122,6 +122,74 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &13033293
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4443503443391479759, guid: abcc0edffc130694999cb3c92ff9e597, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443503443391479759, guid: abcc0edffc130694999cb3c92ff9e597, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0754712
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443503443391479759, guid: abcc0edffc130694999cb3c92ff9e597, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443503443391479759, guid: abcc0edffc130694999cb3c92ff9e597, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443503443391479759, guid: abcc0edffc130694999cb3c92ff9e597, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443503443391479759, guid: abcc0edffc130694999cb3c92ff9e597, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443503443391479759, guid: abcc0edffc130694999cb3c92ff9e597, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443503443391479759, guid: abcc0edffc130694999cb3c92ff9e597, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443503443391479759, guid: abcc0edffc130694999cb3c92ff9e597, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443503443391479759, guid: abcc0edffc130694999cb3c92ff9e597, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8964615325068762013, guid: abcc0edffc130694999cb3c92ff9e597, type: 3}
+      propertyPath: m_Name
+      value: HapticimpulsePlayer (Right)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abcc0edffc130694999cb3c92ff9e597, type: 3}
+--- !u!114 &13033294 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8390955763120940847, guid: abcc0edffc130694999cb3c92ff9e597, type: 3}
+  m_PrefabInstance: {fileID: 13033293}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b734f2bd29eeddd4d85afb0c266228c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &15776617
 GameObject:
   m_ObjectHideFlags: 0
@@ -1052,6 +1120,74 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1001 &771036958
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4217598329538166185, guid: bb653f83d2559664eab6eaf8dd7e9699, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217598329538166185, guid: bb653f83d2559664eab6eaf8dd7e9699, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0754712
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217598329538166185, guid: bb653f83d2559664eab6eaf8dd7e9699, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217598329538166185, guid: bb653f83d2559664eab6eaf8dd7e9699, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217598329538166185, guid: bb653f83d2559664eab6eaf8dd7e9699, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217598329538166185, guid: bb653f83d2559664eab6eaf8dd7e9699, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217598329538166185, guid: bb653f83d2559664eab6eaf8dd7e9699, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217598329538166185, guid: bb653f83d2559664eab6eaf8dd7e9699, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217598329538166185, guid: bb653f83d2559664eab6eaf8dd7e9699, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217598329538166185, guid: bb653f83d2559664eab6eaf8dd7e9699, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8454801631696052282, guid: bb653f83d2559664eab6eaf8dd7e9699, type: 3}
+      propertyPath: m_Name
+      value: 'HapticimpulsePlayer (Left) '
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bb653f83d2559664eab6eaf8dd7e9699, type: 3}
+--- !u!114 &771036959 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7171595898922544899, guid: bb653f83d2559664eab6eaf8dd7e9699, type: 3}
+  m_PrefabInstance: {fileID: 771036958}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b734f2bd29eeddd4d85afb0c266228c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &780025849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1123,6 +1259,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2247129895191702764, guid: e8fb48b2097a4fe4c9bad4f438c1eae2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 780025855}
+    - targetCorrespondingSourceObject: {fileID: 2247129895191702764, guid: e8fb48b2097a4fe4c9bad4f438c1eae2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 780025856}
   m_SourcePrefab: {fileID: 100100000, guid: e8fb48b2097a4fe4c9bad4f438c1eae2, type: 3}
 --- !u!4 &780025850 stripped
 Transform:
@@ -1377,7 +1516,52 @@ MonoBehaviour:
   playHaptics: 1
   amplitude: 0.4
   duration: 0.05
-  xrInteractor: {fileID: 780025852}
+  feedback: {fileID: 780025856}
+--- !u!114 &780025856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780025851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd0b9921bce4eeb49bd05815b1135ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractorSourceObject: {fileID: 780025852}
+  m_HapticImpulsePlayer: {fileID: 771036959}
+  m_PlaySelectEntered: 0
+  m_SelectEnteredData:
+    m_Amplitude: 0.5
+    m_Duration: 0.1
+    m_Frequency: 0
+  m_PlaySelectExited: 0
+  m_SelectExitedData:
+    m_Amplitude: 0.5
+    m_Duration: 0.1
+    m_Frequency: 0
+  m_PlaySelectCanceled: 0
+  m_SelectCanceledData:
+    m_Amplitude: 0.5
+    m_Duration: 0.1
+    m_Frequency: 0
+  m_PlayHoverEntered: 0
+  m_HoverEnteredData:
+    m_Amplitude: 0.25
+    m_Duration: 0.1
+    m_Frequency: 0
+  m_PlayHoverExited: 0
+  m_HoverExitedData:
+    m_Amplitude: 0.25
+    m_Duration: 0.1
+    m_Frequency: 0
+  m_PlayHoverCanceled: 0
+  m_HoverCanceledData:
+    m_Amplitude: 0.25
+    m_Duration: 0.1
+    m_Frequency: 0
+  m_AllowHoverHapticsWhileSelecting: 0
 --- !u!1 &959604798
 GameObject:
   m_ObjectHideFlags: 0
@@ -2792,8 +2976,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c7978275883689479ccbd0dfbd075c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftController: {fileID: 780025852}
-  rightController: {fileID: 1918000613}
+  leftController: {fileID: 0}
+  rightController: {fileID: 0}
   requiredTag: HapticTarget
   amplitude: 0.55
   duration: 0.1
@@ -2924,7 +3108,7 @@ MonoBehaviour:
   playHaptics: 1
   amplitude: 0.4
   duration: 0.05
-  xrInteractor: {fileID: 1918000613}
+  feedback: {fileID: 0}
 --- !u!135 &1333083376
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3655,6 +3839,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2247129895191702764, guid: e8fb48b2097a4fe4c9bad4f438c1eae2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1918000614}
+    - targetCorrespondingSourceObject: {fileID: 2247129895191702764, guid: e8fb48b2097a4fe4c9bad4f438c1eae2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1918000615}
   m_SourcePrefab: {fileID: 100100000, guid: e8fb48b2097a4fe4c9bad4f438c1eae2, type: 3}
 --- !u!1 &1918000609 stripped
 GameObject:
@@ -3909,7 +4096,52 @@ MonoBehaviour:
   playHaptics: 1
   amplitude: 0.4
   duration: 0.05
-  xrInteractor: {fileID: 1918000613}
+  feedback: {fileID: 1918000615}
+--- !u!114 &1918000615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918000609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd0b9921bce4eeb49bd05815b1135ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractorSourceObject: {fileID: 1918000613}
+  m_HapticImpulsePlayer: {fileID: 13033294}
+  m_PlaySelectEntered: 0
+  m_SelectEnteredData:
+    m_Amplitude: 0.5
+    m_Duration: 0.1
+    m_Frequency: 0
+  m_PlaySelectExited: 0
+  m_SelectExitedData:
+    m_Amplitude: 0.5
+    m_Duration: 0.1
+    m_Frequency: 0
+  m_PlaySelectCanceled: 0
+  m_SelectCanceledData:
+    m_Amplitude: 0.5
+    m_Duration: 0.1
+    m_Frequency: 0
+  m_PlayHoverEntered: 0
+  m_HoverEnteredData:
+    m_Amplitude: 0.25
+    m_Duration: 0.1
+    m_Frequency: 0
+  m_PlayHoverExited: 0
+  m_HoverExitedData:
+    m_Amplitude: 0.25
+    m_Duration: 0.1
+    m_Frequency: 0
+  m_PlayHoverCanceled: 0
+  m_HoverCanceledData:
+    m_Amplitude: 0.25
+    m_Duration: 0.1
+    m_Frequency: 0
+  m_AllowHoverHapticsWhileSelecting: 0
 --- !u!1 &1927999641
 GameObject:
   m_ObjectHideFlags: 0
@@ -4316,3 +4548,5 @@ SceneRoots:
   - {fileID: 216286134}
   - {fileID: 1583292617}
   - {fileID: 326482255}
+  - {fileID: 771036958}
+  - {fileID: 13033293}
