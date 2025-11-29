@@ -1,14 +1,15 @@
 ﻿// HapticOnContactSimple.cs
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
+using UnityEngine.XR.Interaction.Toolkit.Feedback;
 
 // ต้องอยู่บน Player ที่มี CharacterController
 [RequireComponent(typeof(CharacterController))]
 public class HapticOnContactSimple : MonoBehaviour
 {
     [Header("Controllers to vibrate (assign in Inspector)")]
-    public UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor leftController;
-    public UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor rightController;
+      public SimpleHapticFeedback leftController;
+      public SimpleHapticFeedback rightController;
 
     [Header("Filter by Tag (leave empty = any)")]
     public string requiredTag = "HapticTarget";
@@ -39,22 +40,22 @@ public class HapticOnContactSimple : MonoBehaviour
 
     }
 
-    void Vibrate(UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor hand)
+  void Vibrate(SimpleHapticFeedback hand)
     {
-        if (hand == null)
+     if (hand == null)
         {
-            if (debugAllHits) Debug.Log("[Haptic] Skip: hand is null");
+            if (debugAllHits)
+                Debug.Log("[Haptic] Skip: SimpleHapticFeedback is null");
             return;
         }
 
-        var ctrl = hand.xrController;
-        if (ctrl == null)
-        {
-            if (debugAllHits) Debug.Log($"[Haptic] Skip: xrController is null on '{hand.name}'");
-            return;
-        }
+        // ใช้ API ของ SimpleHapticFeedback
+        hand.hapticImpulsePlayer.SendHapticImpulse(
+            Mathf.Clamp01(amplitude),
+            Mathf.Max(0f, duration)
+        );
 
-        ctrl.SendHapticImpulse(Mathf.Clamp01(amplitude), Mathf.Max(0f, duration));
-        Debug.Log("[Haptic] Haptic Controller on contact!!");
+        if (debugAllHits)
+            Debug.Log("[Haptic] Haptic feedback fired!");
     }
 }
