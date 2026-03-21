@@ -18,7 +18,6 @@ public class PressableButton : MonoBehaviour, IInteractable
 
     [Header("Behavior")]
     [Tooltip("ชื่อฉากที่จะโหลด (ต้องอยู่ใน Build Settings) เว้นว่าง = ไม่เปลี่ยนฉาก")]
-    [SerializeField] string sceneToLoad = "";
     [SerializeField] UnityEvent onPressed;   // เรียกตอนกดยุบ
     [SerializeField] UnityEvent onReleased;  // เรียกตอนเด้งกลับ
 
@@ -60,11 +59,6 @@ public class PressableButton : MonoBehaviour, IInteractable
         yield return MoveLocal(pressTarget, pressTarget.localPosition, _initialLocalPos, pressTime);
         onReleased?.Invoke();
 
-        // เปลี่ยนฉากถ้าระบุ
-        if (!string.IsNullOrEmpty(sceneToLoad))
-        {
-            SceneManager.LoadScene(sceneToLoad);
-        }
 
         _busy = false;
     }
